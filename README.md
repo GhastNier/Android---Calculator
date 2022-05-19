@@ -1,5 +1,7 @@
 # Calculator Midterm Exam
-
+## Supported Languages
+> Currently EN-US and CA-FR are available.
+> _This was not part of the actual exam_
 ## Night Mode
 > The night mode toggle is put in place in order to override the settings from the cell phone.
 > It is used to demonstrate the understand of overwriting backgroundTint and Settings.
