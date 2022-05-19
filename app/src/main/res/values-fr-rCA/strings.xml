@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculatrice</string>
+    <string name="activity_1" translatable="false">La Calcu</string>
+    <string name="action_settings">Configuration</string>
+    <string name="add">Additioner</string>
+    <string name="sub">Soustraire</string>
+    <string name="mult">Multiplier</string>
+    <string name="divide">Diviser</string>
+    <string name="left">Gauche</string>
+    <string name="right">Droit</string>
+    <string name="left_operand">Nombre Gauche</string>
+    <string name="right_operand">Nombre Droit</string>
+    <string name="night_mode">Mode Nuit</string>
+    <string name="result">Resultat</string>
+    <string name="operand_error">Vous devez avoir deux nombres</string>
+    <string name="reset_toast">Tout a été réinitialisé</string>
+    <string name="value_error">"Valeur Inatendue: "</string>
+</resources>

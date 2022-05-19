@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-36dp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/night_mode"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.846" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="392dp"
+            android:layout_height="53dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/operator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.907">
+
+            <RadioButton
+                android:id="@+id/add"
+                android:checked="true"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/add"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/sub"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sub"
+
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/mult"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mult"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/div"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="@string/divide"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="403dp"
+            android:layout_height="341dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.882">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/nine"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:clickable="true"
+                    android:onClick="addNumbers"
+                    android:text="@string/_9"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/eight"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/_8"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/seven"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/_7"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/six"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/_6"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/five"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/_5"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/four"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/_4"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/three"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/three"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/two"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/two"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/one"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/one"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="clearOperand"
+                    android:text="@string/clear"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/zero"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="addNumbers"
+                    android:text="@string/zero"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/equals"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:onClick="calculate"
+                    android:text="@string/equals"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="20sp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/side"
+                    android:layout_width="105dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/material_dynamic_primary90"
+                    android:text="@string/left"
+                    android:textColor="@color/material_dynamic_neutral_variant50"
+                    android:textSize="16sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/rightOperand"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="12dp"
+            android:hint="@string/right_operand"
+            android:textAlignment="center"
+            android:textColor="#7986CB"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/operator"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.641" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/result"
+            android:textAlignment="center"
+            android:textSize="42sp"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/operator"
+            app:layout_constraintVertical_bias="0.223" />
+
+        <TextView
+            android:id="@+id/leftOperand"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:hint="@string/left_operand"
+            android:textAlignment="center"
+            android:textColor="#7986CB"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toStartOf="@+id/rightOperand"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.641" />
+
+        <TextView
+            android:id="@+id/operator"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:text="@string/plus"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toStartOf="@+id/rightOperand"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/leftOperand"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.641" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equals"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leftOperand"
+            app:layout_constraintVertical_bias="0.297" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
