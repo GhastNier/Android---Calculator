@@ -27,14 +27,12 @@
 ### Operands
 > The Operands and Result TextView use an Hint to display the main text.
 > When a numerical button is clicked it's value is added to the currently selected operand TextView.
-> The Left / Right Button at the button of the screen is used to select the Operand to bo modified, this selection is permanantly stored using SharedPreference.
-> 
->> ![image](https://user-images.githubusercontent.com/74478018/169348921-569791b0-ed86-43c9-9ca2-56d9c6447348.png)
->> ![image](https://user-images.githubusercontent.com/74478018/169348985-b29accee-923e-4ff8-9aac-4d8128951d29.png)
+
 ### Result
 > When the _Equal Sign Button_ is clicked a calculation of both operand occurs using the selected operator.
 > If any of the operand is Null a Toast is shown on screen (try/catch) prompting the user to enter an operand in both field.
 > The numbers are Float values.
+> 
 > ![image](https://user-images.githubusercontent.com/74478018/169349953-4773fffc-0e0e-4eae-90a9-82bf6cb916e9.png)
 ### Buttons
 #### Numerical Buttons
@@ -43,8 +41,11 @@
 > onClick listener calling the clearOperand() method.
 > When clicked a Toast is prompted.
 > 
-> > ![image](https://user-images.githubusercontent.com/74478018/169350458-9b2e6e93-9a90-4677-82a3-57a949c8cdf5.png)
+> ![image](https://user-images.githubusercontent.com/74478018/169350458-9b2e6e93-9a90-4677-82a3-57a949c8cdf5.png)
 #### Left / Right Button
+> The Left / Right Button at the button of the screen is used to select the Operand to bo modified, this selection is permanantly stored using SharedPreference.
 > When clicked the operand to be modified is changed in the SharedPreference.
 > When left is shown => Left Operand is Appended.
 > When Right is shown => Right Operand is Appended.
+>> ![image](https://user-images.githubusercontent.com/74478018/169348921-569791b0-ed86-43c9-9ca2-56d9c6447348.png)
+>> ![image](https://user-images.githubusercontent.com/74478018/169348985-b29accee-923e-4ff8-9aac-4d8128951d29.png)
